@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/*navbar styling*/
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky
+{
+  padding: 15px 0;
+  background:black;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a
+{
+  color:white;
+  font-size: 35px;
+  font-weight: 600;  
+}
+
+.navbar .logo a span
+{ 
+  color: crimson;
+  transition: all 0.3s ease;
+}
+
+.navbar.navbar.sticky .logo a span
+{
+  color:white;
+}
+
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a
+{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color: crimson;
+}
+
+
+/*home section styling*/
+.home
+{
+  display: flex;
+  background: url("yah.gif") no-repeat center;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  min-height: 500;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width
+{
+  margin: auto 0 auto 40px;
+
+}
+
+.home .home-content .text-1
+{
+  font-size:  27px;
+}
+
+.home .home-content .text-2
+{
+  font-size:  75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-content .text-3
+{
+  font-size:  40px;
+  margin: 5px 0 ;
+}
+
+.home .home-content .text-3 span
+{
+color: crimson;
+font-weight: 500;  
+}
+
+.home .home-content a
+{
+  display: inline-block;
+  background: crimson;
+  color: white;
+  font-size:  25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.home .home-content a:hover
+{
+  color: crimson;
+  background: none;
+}
+
+/* about me section styling*/
+section
+{
+  padding: 100px 0;
+}
+.about
+{
+  font-family: 'Poppins', sans-serif;
+}
+.about .title
+{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50px;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.about .title::before
+{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px; 
+  height: 3px;
+  background: black;
+  transform: translateX(-50% );
+}
+
+.about .title::after
+{
+  content: "who am I?";
+  font-style: italic;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson ;
+  padding: 5px; 
+  background: white;
+  transform: translateX(-50% );
+}
+
+.about .about-content
+{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .about-content .left 
+{
+  width: 45%;
+}
+.about .about-content .left img
+{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+.about .about-content .right
+{
+  width: 55%;
+}
+
+.about .about-content .right .text
+{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .right .text span
+{
+  color: crimson;
+}
+
+/* My games styling*/
+section
+{
+  padding: 100px 0;
+}
+.MyGames
+{
+  font-family: 'Poppins', sans-serif;
+  background-color: orange;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px black;
+}
+.MyGames .title
+{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50px;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.MyGames .title::before
+{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px; 
+  height: 3px;
+  background: black;
+  transform: translateX(-50% );
+}
+
+.MyGames .title::after
+{
+  
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson ;
+  padding: 5px; 
+  background: white;
+  transform: translateX(-50% );
+}
+
+.MyGames .games-content
+{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.MyGames .games-content .left 
+{
+  width: 45%;
+}
+
+.MyGames .games-content .right
+{
+  width: 55%;
+}
+
+.MyGames .games-content .text
+{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.MyGames .games-content .text span
+{
+  color: crimson;
+}
+
+/* table styliong */
+table
+{
+  border-style: double;
+  background: black;
+  color: white;
+  font-size:  25px;
+  border-radius: 10px;
+  border: 5px solid white;
+  margin: auto;
+}
+thead
+{
+  color: crimson;
+}
+
+td
+{
+  text-align: center;
+}
+
+p
+{
+text-align: justify;
+text-justify: inter-word;
+}
+
+/* Hobbies styling*/
+section
+{
+  padding: 100px 0;
+}
+.Hobbies
+{
+  font-family: 'Poppins', sans-serif;
+}
+.Hobbies .title
+{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50px;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.Hobbies .title::before
+{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px; 
+  height: 3px;
+  background: black;
+  transform: translateX(-50% );
+}
+
+.Hobbies .title::after
+{
+
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson ;
+  padding: 5px; 
+  background: white;
+  transform: translateX(-50% );
+}
+
+.Hobbies .hobbies-content
+{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.Hobbies .hobbies-content .left 
+{
+  width: 45%;
+}
+.Hobbies .hobbies-content .left img
+{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+.Hobbies .hobbies-content .right
+{
+  width: 55%;
+}
+
+.Hobbies .hobbies-content .right .text
+{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Hobbies .hobbies-content .right .text span
+{
+  color: crimson;
+}
+
+/*contact me styling*/
+section
+{
+  padding: 100px 0;
+}
+
+.contactme
+{
+  margin-top: 100px;
+  box-shadow: 0px 0px 20px whitesmoke;
+  background-color: black;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.contactme .title
+{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 50px;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+
+.contactme .title::before
+{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;  
+  height: 3px;
+  background: white;
+  transform: translateX(-50% );
+}
+
+.contactme .title::after
+{
+  
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson ;
+  padding: 5px; 
+  background: white;
+  transform: translateX(-50% );
+}
+
+.form-group
+{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.form-group label
+{
+    color: crimson;
+}
+.form-group input, .form-group textarea
+{
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.textarea
+{
+  resize: vertical;
+}
+
+/* button syling*/
+button[type="submit"]
+{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-inline-end: 20px;
+  border-radius: 8px;
+  font-size: 24px;
+  font-family: 'Ubuntu', sans-serif;
+  color: crimson;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover
+{
+  background-color: crimson;
+  color: black;
+}
+
+/* status styling*/
+
+#status
+{
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border: 10px;
+  border-radius: 10px;
+}
+
+#status.default
+{
+  visibility: hidden;
+}
+#status.success
+{
+  visibility: visible;
+  background-color: lightgreen; 
+  animation: status 2s ease forwards;  
+}
+#status.error
+{
+  visibility: visible;
+  background-color: crimson;
+  color: white;
+  animation: status 2s ease forwards;
+}
+@keyframes status
+{   
+  0%
+  {
+      opacity: 1;
+      pointer-events: all;
+  }
+  90%
+  {
+      opacity: 1;
+      pointer-events: all;
+  }
+  100%
+  {
+      opacity: 0;
+      pointer-events: none;
+  }
+}
